@@ -1,0 +1,41 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/about.css'  %}">
+{% endblock %}
+
+{% block content%}
+    <main>
+        <div class="seperator">
+            <hr>
+            <div class="description-bar">
+                <h2>about us</h2>
+            </div>
+        </div>
+
+        <div class="about-row">
+            <div class="about-items about-icon"><i class="fas fa-truck"></i></div>
+            <div class="about-items about-description">
+                <p>
+                    Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Quis natus delectus at 
+                    quae numquam saepe optio ipsum, sint libero quo officia 
+                    voluptas perspiciatis nam ea quia corrupti eligendi sed placeat.
+                </p>
+            </div>
+        </div>
+        <div class="about-row">
+            <div class="about-items about-icon"><i class="fas fa-truck"></i></div>
+            <div class="about-items about-description">
+                <p> 
+                    Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Quis natus delectus at 
+                    quae numquam saepe optio ipsum, sint libero quo officia 
+                    voluptas perspiciatis nam ea quia corrupti eligendi sed placeat.
+                </p>
+            </div>
+        </div>
+    </main>
+    {% include 'footer.html' %}
+{% endblock %}

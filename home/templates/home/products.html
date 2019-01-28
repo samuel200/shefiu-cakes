@@ -1,0 +1,78 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/products.css'  %}">
+{% endblock %}
+
+{% block content%}
+    <main>
+
+        <section class="products-holder">
+
+            <div class="seperator">
+                <hr>
+                <div class="description-bar">
+                    <h2>cakes</h2>
+                </div>
+            </div>
+
+           {% for cake in cakes %}
+                <div class="product-card">
+                    <img src="{{ cake.prod_image.url }}" alt="{{ cake.prod_name }}">
+                    <p class="product-name">{{ cake.prod_name }}</p>
+                    <div class="cover">
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+           {% endfor %}
+
+        </section>
+
+        <section class="products-holder">
+
+            <div class="seperator">
+                <hr>
+                <div class="description-bar">
+                    <h2>snacks</h2>
+                </div>
+            </div> 
+
+            {% for snack in snacks %}
+                <div class="product-card">
+                    <img src="{{ snack.prod_image.url }}" alt="{{ snack.prod_name }}">
+                    <p class="product-name">{{ snack.prod_name}}</p>
+                    <div class="cover">
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </section>
+
+        <section class="products-holder">
+
+            <div class="seperator">
+                <hr>
+                <div class="description-bar">
+                    <h2>other pasteries</h2>
+                </div>
+            </div> 
+
+            {% for pastery in pasteries %}
+                <div class="product-card">
+                    <img src="{{ pastery.prod_image.url }}" alt="{{ pastery.prod_name }}">
+                    <p class="product-name">{{ pastery.prod_name }}</p>
+                    <div class="cover">
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </section>
+
+    </main>
+    {% include 'shopping-cart.html' %}
+
+    {% include 'footer.html' %}
+{% endblock %}

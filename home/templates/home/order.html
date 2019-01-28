@@ -1,0 +1,28 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/order.css'  %}">
+{% endblock %}
+
+{% block javascript %}
+    <script src="{% static 'js/order_populate.js'  %}"></script>
+{% endblock %}
+
+{% block content%}
+    <main>
+        <div id="orders">
+            <div class="head">
+                <div class="order-header">item</div>
+                <div class="order-header">quantity</div> 
+                <div class="order-header">unit price</div> 
+                <div class="order-header">sub total</div> 
+            </div>
+            <div id="body">
+                
+            </div>
+        </div> 
+    </main>
+{% include 'shopping-cart.html' %}
+{% include 'footer.html' %}
+{% endblock %}

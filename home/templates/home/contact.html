@@ -1,0 +1,39 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/contacts.css'  %}">
+{% endblock %}
+
+{% block content%}
+    <main>
+        <section id="about-holder">
+            <div class="seperator">
+                <hr>
+                <div class="description-bar">
+                    <h2>contact us</h2>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact">
+                    <i class="fab fa-facebook"></i>
+                    <a href="#">contact us</a>
+                </div>
+            </div> 
+            <div class="contact-card">
+                <div class="contact">
+                    <i class="fab fa-instagram"></i>
+                    <a href="#">contact us</a>
+                </div>
+            </div> 
+            <div class="contact-card">
+                <div class="contact">
+                    <i class="fab fa-twitter"></i>
+                    <a href="#">contact us</a>
+                </div>
+            </div> 
+        </section>
+    </main>
+    
+    {% include 'footer.html' %}
+{% endblock %}

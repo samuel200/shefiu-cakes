@@ -1,0 +1,9 @@
+.products-holder{
+    margin-top: 30px;
+    width: 80%;
+    margin: 0px auto;
+}
+footer{
+    position: relative;
+    bottom: -20px;
+}

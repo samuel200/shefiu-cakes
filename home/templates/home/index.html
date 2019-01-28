@@ -1,0 +1,45 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block content%}
+    <main>
+        <div id="main-display">
+            <img class="main-display-item" src="{% static 'img/blueberry-cake.jpg' %}" alt="blue-berry-cake">
+            <div class="main-display-item" id="order-call">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Amet velit veniam explicabo, earum id reiciendis voluptate tempore,
+                    distinctio laboriosam repudiandae debitis unde deleniti
+                    quisquam dignissimos quis et quo officia? Blanditiis?</p>
+                <a href="#">Order now</a>
+            </div>
+        </div>
+        <div class="seperator">
+            <hr>
+            <div class="description-bar">
+                <h2>some of our products</h2>
+            </div>
+        </div>
+        <section class="product-section">
+            {% if products %}
+            {% for product in products %}
+            <div class="product-card">
+                <img src="{{ product.prod_image.url }}" alt="{{ product.prod_name }}">
+                <p class="product-name">{{ product.prod_name }}</p>
+                <div class="cover">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            {% endfor %}
+
+            {% else %}
+            <h1>No product posted</h1>
+
+            {% endif %}
+
+        </section>
+    </main>
+
+    {% include 'shopping-cart.html' %}
+
+    {% include 'footer.html' %}
+{% endblock %}

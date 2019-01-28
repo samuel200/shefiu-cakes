@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shefiu cakes</title>
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/products.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/card.css' %}">
+    {% block stylesheet %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/responsiveness.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/cookies.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/order.js' %}"></script>
+    {% block javascript %}{% endblock %}
+</head>
+
+<body>
+    {% csrf_token %}
+    <div id="logo-section">
+        <h1><a href="{% url 'home:index'  %}">Shefiu's cakes <i class="fas fa-birthday-cake"></i></a></h1>
+    </div>
+
+    <header class="top-menu">
+        <div class="left social-list">
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <div class="left" id="menu-search">
+                <form action="index.html" method="post">
+                <input type="text" name="search" placeholder="enter search ....">
+                <button type="submit"><img src="static/img/search.png" alt="search-button"></button>
+                </form>
+            </div> -->
+        <div class="right navigation-bar">
+            <nav>
+                <ul>
+                    <li><a id="highlight" href="{% url 'home:index' %}">Home</a></li>
+                    <li><a href="{% url 'home:order' %}">Order</a></li>
+                    <li><a href="{% url 'home:about' %}">About</a></li>
+                    <li><a href="{% url 'home:products' %}">products</a></li>
+                    <li><a href="{% url 'home:contact' %}">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

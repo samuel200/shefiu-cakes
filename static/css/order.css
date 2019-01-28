@@ -1,0 +1,111 @@
+div#orders{
+    width: 85%;
+    margin: 50px auto;
+}
+
+/* this is to design the div that appears when there are no orders */
+#empty{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(206, 59, 59);
+}
+
+/* giving general style to the head of the table */
+div.head{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div.order-header{
+    background: rgb(230, 230, 230);
+}
+
+ /* making the divs stack side by side */
+div.order-header, .order-body-item{
+    width: 12.5%;
+    display: inline-block;
+    padding: 15px 2%;
+}
+
+div.order-header:first-of-type, .order-body-item:first-of-type{
+    width: 35%;
+}
+
+/* giving general styles for the body of the table */
+
+.order-body-item{
+    height: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.order-body-item input[type='number']{
+    width: 60%;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.subtotal{
+    color: brown;
+}
+
+/* styles for the item subsection */
+
+div.product-item{
+    text-align: left;
+    text-transform: capitalize;
+}
+
+div.product-item img,
+div.product-item > div{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+div.product-item button{
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: inherit;
+    font-size: .6em;
+    color: brown;
+}
+
+div.product-item img{
+    width: 60px;
+    height: 60px;
+}
+
+@media(max-width: 960px){
+    div.head{
+        font-size: .6em;
+    }
+
+    div.order-body-item{
+        height: 40px;
+        font-size: .6em;
+    }
+    div.product-item img{
+        width: 30px;
+        height: 30px;
+    }
+
+
+    div.product-item button,
+    .order-body-item input[type='number']{
+        font-size: .7em;
+    }
+}
+
+@media(max-width: 760px){
+    div.head{
+        font-size: .3em;
+    }
+
+    order-body-item b{
+        font-size: .4em;
+    }
+
+}

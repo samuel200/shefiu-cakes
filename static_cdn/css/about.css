@@ -1,0 +1,28 @@
+.about-row{
+    width: 85%;
+    margin: 40px auto;
+}
+
+.about-row .about-items{
+    display: inline-block;
+}
+
+.about-icon{
+    width: 15%;
+    padding: 60px 0px;
+    background: rgb(245, 139, 127);
+    text-align: center;
+    border-radius: 50%;
+}
+
+.about-icon i{
+    font-size: 3em;
+    color: white;
+}
+
+.about-description{
+    width: 65%;
+    line-height: 30px;
+    margin: 0px 40px;
+    color: rgb(120, 120, 120);
+}

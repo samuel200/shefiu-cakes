@@ -1,0 +1,5 @@
+[client]
+database = shefiu_cakes
+user = root
+password = 
+default-character-set = utf8

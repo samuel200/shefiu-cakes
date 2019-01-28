@@ -1,0 +1,36 @@
+#about-holder{
+    width: 80%;
+    margin: 0px auto;
+}
+.contact-card{
+    margin: 5% 2%;
+    width: 28%;
+    display: inline-block;
+}
+
+.contact{
+    display: relative;
+    text-align: center;
+}
+
+.contact i{
+    display: block;
+    font-size: 10em;
+    border-radius: 50%;
+}
+
+.contact a{
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: .5s background;
+}
+
+.contact a:hover{
+    color: white;
+    background: black;
+}

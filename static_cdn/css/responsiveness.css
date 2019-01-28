@@ -1,0 +1,178 @@
+@media screen and (max-width: 960px){
+
+    /* logo section */
+    #logo-section h1{
+        font-size: 1.4em;
+    }
+
+    /* header section */
+    /* #menu-search{
+        display: none;
+    } */
+    .left{
+        font-size: .8em;
+        margin-bottom: 40px;
+    }
+
+    .social-list{
+        width: 30%;
+    }
+    .navigation-bar{
+        width: 55%;
+    }
+
+    /* main body section */
+    #main-display .main-display-item p{
+        font-size: 14px;
+        position: relative;
+        bottom: 60px;
+    }
+
+    #main-display a{
+        position: relative;
+        bottom: 80px;
+    }
+    
+    #main-display:after{
+        content: "";
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+
+    /* production description section  */
+    .seperator .description-bar{
+        top: -15px;
+    }
+
+    .seperator .description-bar h2{
+        font-size: 1.2em;
+    }
+
+    /* product card section */
+
+    .product-card{
+        height: 120px;
+    }
+    .product-card .product-name{
+        font-size: .5em;
+    }
+
+    .product-card .cover a{
+        font-size: .5em;
+    }
+
+    /* contact section */
+    .contact i{
+        font-size: 5em;
+    }
+
+    .contact a{
+        font-size: .8em;
+    }
+
+    /* about section */
+
+    .about-row{
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .about-icon{
+        font-size: 12px;
+        padding: 7%;
+        margin: 30px 0px;
+    }
+    .about-items{
+        margin-bottom: 40px;
+    }
+
+    /* footer section */
+    footer{
+        font-size: .8em;
+        min-height: 100px;
+    }
+    footer div.footer-col{
+        width: 30%;
+    }
+    footer div.footer-col:nth-of-type(1){
+        position: relative;
+        top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 760px){
+
+    /* logo section */
+    #logo-section h1{
+        font-size: 1.2em;
+    }
+
+    /* header section */
+    div.social-list{
+        display: none;
+    }
+    div.navigation-bar{
+        width: 100%;
+        text-align: center;
+        font-size: .7em;
+    }
+
+    /* main section */
+
+    #main-display{
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    main div#main-display img.main-display-item{
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
+    #main-display #order-call{
+        display: none;
+    }
+
+    /* product description section */
+    div.seperator hr{
+        width: 80%;
+    }
+    div.seperator .description-bar h2{
+        font-size: 12px;
+    }
+
+    /* card-section */
+
+    .product-card{
+        width: 45%;
+        max-width: 45%;
+        height: 80px;
+    }
+    .product-card .product-name{
+        font-size: .4em;
+    }
+
+    .product-card .cover a{
+        font-size: .3em;
+    }
+    
+    /* contact section  */
+    .contact-card a{
+        padding: 5px 10px;
+        font-size: .7em;
+    }
+
+    /* footer section */
+    footer{
+        font-size: .7em;
+    }
+
+    footer .footer-col{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }  
+}
